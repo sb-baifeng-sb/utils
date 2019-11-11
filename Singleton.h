@@ -1,6 +1,6 @@
 
-#ifndef __ART_SINGLETON_H__
-#define __ART_SINGLETON_H__
+#ifndef __UTILS_SINGLETON_H__
+#define __UTILS_SINGLETON_H__
 
 namespace utils {
 
