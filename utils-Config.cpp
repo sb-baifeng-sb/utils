@@ -125,4 +125,21 @@ void CParseIniFile::PrintConfig(map<string, string> const& mContent) {
     }
 }
 
+INILoader::Session const& INILoader::getSession(ssc name) const {
+    auto iter = this->mSessions.find(name);
+    assert(iter != this->mSessions.end() && "INILoader::getSession error.");
+    return iter->second;
+}
+
+void INILoader::load(std::string const& source, std::string const& sessionName) {
+    auto iter = this->mSessions.find(sessionName);
+    if (iter != this->mSessions.end()) {
+        return;
+    }
+    auto& config = this->mConfigs[sessionName];
+    utils::CParseIniFile ini;
+    ini.ReadConfig(source, config, sessionName.c_str());
+    this->mSessions.insert(std::make_pair(sessionName, Session(config)));
+}
+
 }
