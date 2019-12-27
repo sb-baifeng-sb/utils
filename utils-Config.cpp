@@ -4,6 +4,7 @@
 #include <fstream>
 #include <iostream>
 #include <sstream>
+#include <assert.h>
 
 #define COMMENT_CHAR '#'
 using namespace std;
