@@ -1,6 +1,6 @@
 //
 //  archives.hpp
-//
+//  https://github.com/USCiLab/cereal
 //  Created by baifeng on 2018/4/19.
 //
 
@@ -36,6 +36,18 @@ public:
 private:
     Stream mStream;
 };
+
+/*
+    template <class Archive>
+    void save( Archive & ar ) const {
+        ar( data );
+    }
+
+    template <class Archive>
+    void load( Archive & ar ) {
+        ar( data );
+    }
+ */
 
 }
 
