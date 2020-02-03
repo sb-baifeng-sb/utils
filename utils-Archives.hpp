@@ -42,7 +42,6 @@ private:
     void save( Archive & ar ) const {
         ar( data );
     }
-
     template <class Archive>
     void load( Archive & ar ) {
         ar( data );
