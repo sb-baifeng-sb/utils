@@ -22,8 +22,8 @@ public:
     typedef std::stringstream Stream;
     typedef cereal::BinaryOutputArchive OutputArchive;
     typedef cereal::BinaryInputArchive InputArchive;
-    typedef std::function<void(OutputArchive& archive)> OutputFunc;
-    typedef std::function<void(InputArchive& archive)> InputFunc;
+    typedef std::function<void(OutputArchive& ar)> OutputFunc;
+    typedef std::function<void(InputArchive& ar)> InputFunc;
 public:
     Archives();
 public:

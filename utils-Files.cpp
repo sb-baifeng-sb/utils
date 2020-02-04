@@ -35,4 +35,14 @@ void freeFileData(FileData* data) {
     }
 }
 
+bool writeFileData(char* buffer, int bufSize, char const* fileName) {
+    FILE* fp = fopen(fileName, "wb");
+    if (fp == NULL) {
+        return false;
+    }
+    fwrite(buffer, bufSize, 1, fp);
+    fclose(fp);
+    return true;
+}
+
 }

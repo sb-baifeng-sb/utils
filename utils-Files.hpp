@@ -11,6 +11,7 @@ typedef struct {
 
 FileData* readFileData(char const* fileName);
 void freeFileData(FileData* data);
+bool writeFileData(char* buffer, int bufSize, char const* fileName);
 
 }
 
