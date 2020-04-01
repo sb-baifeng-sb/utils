@@ -37,6 +37,10 @@ namespace utils {
         return this->mCardSize;
     }
 
+    int Poker::Get(int i) const {
+        return (*this)[i];
+    }
+
     void Poker::Shuffle() {
         assert(this->mCards && this->mCardSize > 0 && "Poker::Shuffle there is no card.");
         for (int i = 0; i < this->mCardSize; ++i) {

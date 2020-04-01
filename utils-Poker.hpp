@@ -20,23 +20,16 @@ namespace utils {
         };
     public:
         Poker();
-
         ~Poker();
-
     public:
         void Load(int size, CardLoader const &loader);
-
         void Shuffle();
-
         void Clear();
-
         void Debug();
-
     public:
         int operator[](int i) const;
-
         int getCount() const;
-
+        int Get(int i) const;
     private:
         Card *mCards;
         int mCardSize;
