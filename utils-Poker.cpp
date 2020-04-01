@@ -26,7 +26,7 @@ namespace utils {
         }
     }
 
-    int Poker::operator[](int i) {
+    int Poker::operator[](int i) const {
         if (i <= -1 || i >= this->mCardSize) {
             return JOKER;
         }

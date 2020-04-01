@@ -33,7 +33,7 @@ namespace utils {
         void Debug();
 
     public:
-        int operator[](int i);
+        int operator[](int i) const;
 
         int getCount() const;
 
