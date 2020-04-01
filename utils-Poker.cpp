@@ -3,6 +3,7 @@
 //
 
 #include "utils-Poker.hpp"
+#include <assert.h>
 
 namespace utils {
 
